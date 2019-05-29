@@ -1,0 +1,14 @@
+<!--index.wxml-->
+
+<view class="page">
+  <view class="container">
+
+    <view 
+    
+      wx:for="{{canvasArr}}" 
+      wx:for-item="canvas"
+      wx:key="color">
+      <canvas style="width: 100px; height: 100px; background-color:{{canvas.color}} " canvas-id="{{canvas.canvasId}}"></canvas>
+    </view>
+  </view>
+</view>
